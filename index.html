@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Login-odin</title>
+</head>
+<body>
+    <div class="main">
+        <div class="background">
+            <div class="logo-container">
+                <img src="./img/odin-lined.png" alt="logo">
+                <h1>SIGN UP FORM</h1>
+            </div>
+
+            <p id="credits">Photo by <a href="https://unsplash.com/@ryunosuke_kikuno">Ryunosuke Kikuno</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+
+        <div class="container">
+            <p class="description">
+                This not a real online service! You know you need something like this in your life to help you realize your deepest dreams. 
+                <br>
+                Sign up now to get started.
+                <br>
+                <br>
+                You know you want to.
+            </p>
+
+            <div class= "form-container">
+                <p id="form-title">Let's do this!</p>
+                <form action="#" method="post">
+                    <label for="first-name">*FIRST NAME
+                        <input type="text" id="first-name" name="first-name" placeholder="Thor" minlength="3" maxlength="50" pattern="^[A-Za-z]+([-']?[A-Za-z]+)*$" required>
+                        <p class="help-first-name hidden">Please enter a valid first name</p>
+                    </label>
+
+                    <label for="last-name">*LAST NAME
+                        <input type="text" id="last-name" name="last-name" placeholder="Odinson" minlength="3" maxlength="50"  pattern="^[A-Za-z]+([-']?[A-Za-z]+)*$" required>
+                        <p class="help-last-name hidden">Please enter a valid last name</p>
+                    </label>
+
+
+                    <label for="mail">EMAIL
+                        <input type="email" id="mail" name="mail" >
+                        <p class="help-email hidden">Please enter a valid email</p>
+                    </label>
+
+                    <label for="tel">PHONE NUMBER
+                        <input type="tel" name="tel" id="tel" pattern="^[0-9]+$">
+                        <p class="help-tel hidden">Please enter a valid phone number</p>
+                    </label>
+
+                    <label for="pwd">*PASSWORD
+                        <input type="password" name="pwd" id="pwd" minlength="4" required>
+                        <p class="help-pwd hidden">*Passwords do not match</p>
+                    </label>
+
+                    <label for="pwd2">*CONFIRM PASSWORD
+                        <input type="password" name="pwd2" id="pwd2" required>
+
+                    </label>
+                </form>
+            </div>
+
+            <div class="submission-container">
+                <button type="submit" class="btn">Create Account</button>
+                <p id="login">Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
